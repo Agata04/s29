@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>NWD-algorytm Euklidesa</title>
+	
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+
+	
+	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=c5BdM0BVgym2yL9quGwQUSYfLl8ys8wn8wv6A9ZkBoWzN4_pIP7z1lNspvb_X2PnUtr_qORYKhsJ9rEE69oIgw" charset="UTF-8"></script><style>
+body{
+	padding-left:100px;
+	padding-right: 100px;
+	font-family: arial;
+
+	}
+
+	</style>
+	
+<script>
+	function f1()
+	{
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		var s;
+		while(a != b)
+		{
+			if(a<b) b = b - a;
+			else a = a - b;
+		}
+		s = a;
+		document.getElementById("wynik").innerHTML = s;
+		
+	}
+
+</script>
+	
+</head>
+
+<body>
+<h1>NWD-algorytm Euklidesa</h1>
+<center>
+<h2>Schemat blokowy</h2>
+<img src = "schemat nwd.jpg">
+</center>
+
+<h2>Kod cpp</h2>
+<img src = "cpp.jpg">
+
+<center>
+<h2>Skrypt JS</h2>
+<p>Skrypt JS drukuje liczby z przedziału a, b</p><br>
+Podaj a 
+<input type = "number" id = "a">
+Podaj b
+<input type = "number" id = "b">
+<input type = "button" value = "Pokaż" onclick = "f1()">
+<br>
+<div id = "wynik"></div>
+</center>
+<br>
+
+<h2>Skrypt JS</h2>
+<img src="js.jpg">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+</html>
